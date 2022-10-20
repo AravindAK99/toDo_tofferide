@@ -1,0 +1,23 @@
+.form{
+    position: relative;
+    margin-left: 5.5cm;
+    top: 5cm;
+}
+.taskTitle{
+    font-size: 1cm;
+    font-family: cursive;
+}
+.taskname{
+    font-size: .5cm;
+
+}
+.forminput{
+    background-color: rgb(198, 194, 198);
+    color:  rgb(169, 36, 169);
+    font-family: cursive;
+}
+.btntask{
+    background-color: rgb(169, 36, 169);
+    color: white;
+    font-family: cursive;
+}

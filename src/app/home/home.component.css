@@ -1,0 +1,80 @@
+.col1{
+    background: linear-gradient(rgb(165, 35, 165),rgb(0, 0, 0));
+    height: 100vh;
+    position: fixed;
+    
+}
+
+.h1{
+    font-family: fantasy;
+    margin-left: .7cm;
+    margin-top: .5cm;
+    font-size: .8cm;
+}
+#h2{
+    color: rgb(183, 181, 181);
+    position: relative;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    font-family: monospace;
+    font-size: .6cm;
+}
+#h3{
+    color: rgb(194, 189, 189);
+    position: relative;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    font-family: monospace;
+    font-size: .45cm;
+}
+#h4{
+    color: rgb(181, 178, 178);
+    font-size: .42cm;
+    margin-left: 1.7cm;
+    font-family: monospace;
+    
+
+}
+.img1{
+    height: 1.2cm;
+    width: fit-content;
+}
+.img2{
+    height: .6cm;
+    width: fit-content;
+}
+.dropdown{
+    margin-left: 1cm;
+    position: relative;
+    top: 2cm;
+}
+
+.card1{
+    position: relative;
+    left: 15cm;
+    top: 2cm;
+    width: max-content;
+    height: max-content;
+}
+.card-subtitle{
+    font-size: .6cm;
+    font-family: sans-serif;
+    font-style: normal;
+    font-variant: petite-caps;
+}
+.cardul{
+    color: rgb(226, 22, 226);
+}
+.btnedit,.btndelete{
+    width: 2cm;
+    left: 1cm;
+    position: relative;
+}
+.btndelete{
+    color: white;
+    background-color: rgb(165, 35, 165);
+}
+.btnedit{
+    color: black;
+    background-color: white;
+}

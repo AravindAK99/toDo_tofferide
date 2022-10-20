@@ -1,0 +1,42 @@
+
+<div>
+    <div class="row col-lg-12">
+        <div class="col-lg-2 col1 animate__animated animate__fadeInLeft animate__delay-1s">
+            <h3 class="h1" type="submit">To Do <img src="https://cdn-icons-png.flaticon.com/512/3472/3472583.png" class="img1" alt=""> </h3>
+            
+            <p id="h2" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="img2" alt=""> My account</p>
+            <hr><br>
+            <p id="h3" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/7647/7647398.png" class="img2" alt=""> My Tasks</p>
+
+            <ul class="">
+                <li id="h4"><p  type="submit" >To Do</p></li>
+                <li id="h4"><p  type="submit" routerLink="/onGoing">On going</p></li>
+                <li id="h4"><p  type="submit" routerLink="/done">Done</p></li>
+            </ul>
+
+            <p id="h3" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/1545/1545582.png" class="img2" alt="" (click)="addTask()"> Add Tasks</p>
+
+            <p id="h3" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/13/13936.png" class="img2" alt=""> Contact</p>
+
+            
+        </div>
+       
+        <div class="col-lg-10 ">
+            
+            <div *ngFor="let item of postArray">
+                <div class="card card1 animate__animated animate__fadeInUp animate__delay-1s " style="width:40rem;">
+                    <div class="card-body col-lg-12 row">
+                        <div class="col-lg-6"><br>
+                      <input type="checkbox"  class="card-subtitle mb-2 form-check-input">&nbsp; &nbsp;{{item.title}}
+                    </div>
+                      <ul class=" cardul col-lg-6"><br>
+                        <button class="btn btn-outline-dark btnedit" (click)="startTask(item)" >Start</button>&nbsp; &nbsp;
+                        <button class="btn  btndelete" (click)="finishTask(item)" >Finish</button>
+                      </ul>
+                      
+                    </div>
+                  </div><br>
+            </div>
+        </div>
+    </div>
+</div>

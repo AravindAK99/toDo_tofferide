@@ -1,0 +1,36 @@
+
+<div class="row col-lg-12">
+    <div class="col-lg-2" style="background:linear-gradient(rgb(255, 255, 255),rgb(147, 141, 141));"></div>
+    <div class="col-lg-4  " style="background:linear-gradient(rgb(255, 255, 255),rgb(147, 141, 141))">
+        <form class="form" [formGroup]="logForm" (ngSubmit)="onSubmit()">
+            <h2>Log In</h2><hr>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" formControlName="email" placeholder="email"
+              [ngClass]="{'is-invalid':submit && this.logForm.controls.email.errors}">
+              <div *ngIf="submit && this.logForm.controls.email.errors" class="invalid-feedback">
+                    <div *ngIf="this.logForm.controls.email.errors?.['required']">required</div>
+                    <div *ngIf="this.logForm.controls.email.errors?.['email']">Inavlid email address</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="text" class="form-control" formControlName="password" placeholder="password"
+              [ngClass]="{'is-invalid':submit && this.logForm.controls.password.errors}">
+              <div *ngIf="submit && this.logForm.controls.password.errors" class="invalid-feedback">
+                    <div *ngIf="this.logForm.controls.password.errors?.['pattern']">Invalid <br>tip: include special characters,numbers </div>
+                    <div *ngIf="this.logForm.controls.password.errors?.['minlength']">tip: must be atleast 7 letters and upto 15</div>
+                    <div *ngIf="this.logForm.controls.password.errors?.['required']">required</div>
+              </div>
+            </div>
+            <div id="forgot" type="submit" style="color:rgb(189, 15, 189) ;"> Forgot Password ?</div><br>
+            <button type="submit" class="btn btn1" >Submit</button><br><br>
+            <p>Don't you have an account? <span style="color:rgb(189, 15, 189)" ><span style="font-size: .5cm;"> <span type="submit"> Sign up</span></span></span></p>
+          </form>
+    </div>
+    <div class="col-lg-6 right">
+        <h2 id="taskmanager">Task Manager</h2>
+        <p id="manage" class="animate__animated animate__fadeInUp animate__delay-1s">Manage your <span style="color: rgb(238, 0, 255);">tasks..</span> </p>
+        <p id="lists" class="animate__animated animate__fadeInUp animate__delay-1s">Lists,cards and boards enable you to organize and prioritize <br> your projects in a fun,flexible and rewarding way. <span> Let's get started!!</span></p>
+    </div>
+</div>

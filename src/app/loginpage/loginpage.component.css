@@ -1,0 +1,44 @@
+.form{
+    position:relative;
+    margin-top: 3.5cm;
+    right: 3cm;
+    
+}
+.form-control{
+    background-color: rgb(179, 172, 172);
+}
+#forgot{
+    position: relative;
+    left: 9cm;
+}
+.right{
+    height: 100vh;
+    background: linear-gradient(rgb(253, 0, 253),rgb(0, 0, 0));
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(156, 33, 156);
+}
+#taskmanager{
+    position: relative;
+    margin-top: 6cm;
+    margin-left: 6.4cm;
+    font-size: 1.3cm;
+    font-family: revert;
+    color: rgb(0, 0, 0);
+}
+#manage{
+    position: relative;
+    margin-left: 12cm;
+    font-size: .5cm;
+    color: rgb(174, 174, 174);
+    
+
+}
+#lists{
+    position: relative;
+    margin-top: 8cm;
+    margin-left: .5cm;
+    font-size: .4cm;
+    color: rgb(170 168 168)
+}
